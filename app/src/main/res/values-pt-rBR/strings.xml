@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cadastro Contatos</string>
+
+    <string name="hello_world">Olá Bundo!</string>
+    <string name="action_settings">Configurações</string>
+    <string name="title_activity_dois">DoisActivity</string>
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+    <string name="login">Login</string>
+    <string name="user_name">Nome do Usuario</string>
+    <string name="password">Senha</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="register">inserir Cliente</string>
+    <string name="age">Idade</string>
+    <string name="name">Nome</string>
+    <string name="address">Endereco</string>
+    <string name="phone">Telefone</string>
+    <string name="Save">Salvar</string>
+    <string name="btnCadastro">Inserir Clientes</string>
+    <string name="required_field">Campo Obrigatório</string>
+    <string name="addClient">Adicionar Cliente</string>
+    <string name="menuEdit">Edit Client</string>
+    <string name="menuRemove">Remove Client</string>
+    <string name="confirm">Confirmo!</string>
+    <string name="yes">Sim</string>
+    <string name="cep">CEP</string>
+    <string name="findCep">Buscar Cep</string>
+    <string name="number">Number</string>
+    <string name="tipoDeLogradouro">Tipo De Logradouro</string>
+    <string name="logradouro">Logradouro</string>
+    <string name="bairro">Bairro</string>
+    <string name="cidade">Cidade</string>
+    <string name="estado">Estado</string>
+    <string name="loading">Carregando....</string>
+    <string name="redirectToList">Clients List</string>
+    <string name="success">Sim, Desejo!</string>
+    <string name="no">Não!</string>
+    <string name="complements">Complemento</string>
+</resources>
