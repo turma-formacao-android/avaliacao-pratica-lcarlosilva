@@ -29,7 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
     public static String CLIENT_PARAM = "CLIENT_PARAM";
 
     private Client client;
-    private ClientAddress clientAddress = new ClientAddress();
+    private ClientAddress clientAddress;
 
     private EditText clientName;
     private EditText clientAge;
@@ -50,7 +50,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_persist_client);
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            client = (Client) extras.getParcelable(CLIENT_PARAM);
+            client = extras.getParcelable(CLIENT_PARAM);
         }
         bindComponents();
         loadIfEdit();
@@ -177,28 +177,32 @@ public class RegisterActivity extends AppCompatActivity {
         if (FormHelper.requireValidate(RegisterActivity.this, clientName, clientAge, clienteComplements, clientPhone)) {
             if (client == null) {
                 client = new Client();
-
             }
-
             client.setName(clientName.getText().toString());
             client.setAge(Integer.parseInt(clientAge.getText().toString()));
             client.setPhone(clientPhone.getText().toString());
-
-            clientAddress.setCep(editTextCep.getText().toString());
-            clientAddress.setTipoDeLogradouro(editTipoLogradouro.getText().toString());
-            clientAddress.setLogradouro(editLogradouro.getText().toString());
-            clientAddress.setBairro(editBairro.getText().toString());
-            clientAddress.setNumero(Integer.parseInt(editNumber.getText().toString()));
-            clientAddress.setComplemento(clienteComplements.getText().toString());
-            clientAddress.setCidade(editCidade.getText().toString());
-            clientAddress.setEstado(editEstado.getText().toString());
-
-            client.setAddress(clientAddress.getId());
-
+            client.setAddress(saveAddress());
             client.save();
             return true;
         }
         return false;
+    }
+
+    private Long saveAddress() {
+        Long idAddress;
+        if (clientAddress == null) {
+            clientAddress = new ClientAddress();
+        }
+        clientAddress.setCep(editTextCep.getText().toString());
+        clientAddress.setTipoDeLogradouro(editTipoLogradouro.getText().toString());
+        clientAddress.setLogradouro(editLogradouro.getText().toString());
+        clientAddress.setBairro(editBairro.getText().toString());
+        clientAddress.setNumero(Integer.parseInt(editNumber.getText().toString()));
+        clientAddress.setComplemento(clienteComplements.getText().toString());
+        clientAddress.setCidade(editCidade.getText().toString());
+        clientAddress.setEstado(editEstado.getText().toString());
+        idAddress = clientAddress.save(clientAddress);
+        return idAddress;
     }
 
 

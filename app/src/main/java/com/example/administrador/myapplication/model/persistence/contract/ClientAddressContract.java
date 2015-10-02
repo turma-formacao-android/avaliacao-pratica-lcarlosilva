@@ -44,7 +44,6 @@ public class ClientAddressContract {
     }
 
     public static ContentValues getContentValues(ClientAddress clientAddress) {
-
         ContentValues values = new ContentValues();
         values.put(ClientAddressContract.ID, clientAddress.getId());
         values.put(ClientAddressContract.CEP, clientAddress.getCep());
@@ -55,7 +54,6 @@ public class ClientAddressContract {
         values.put(ClientAddressContract.COMPLEMENTO, clientAddress.getComplemento());
         values.put(ClientAddressContract.CIDADE, clientAddress.getCidade());
         values.put(ClientAddressContract.ESTADO, clientAddress.getEstado());
-
         return values;
     }
 

@@ -35,7 +35,7 @@ public class ClientContract {
         return sql.toString();
     }
 
-    public static ContentValues getContentValues(Client client, Long idAddress) {
+    public static ContentValues getContentValues(Client client) {
         ContentValues values = new ContentValues();
         values.put(ClientContract.CLIENT_ID, client.getId());
         values.put(ClientContract.CLIENT_NAME, client.getName());

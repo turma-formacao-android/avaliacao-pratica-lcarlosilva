@@ -29,12 +29,12 @@ public class SQLiteClientRepositoy implements ClientRepository {
     }
 
     @Override
-    public void save(Client client, Long idAddress) {
+    public void save(Client client) {
         DatabaseHelper helper = new DatabaseHelper(AppUtil.CONTEXT); //capturei meu db
         SQLiteDatabase db = helper.getReadableDatabase(); //obtive uma instacia do db
 
         //valores
-        ContentValues values = ClientContract.getContentValues(client, idAddress);
+        ContentValues values = ClientContract.getContentValues(client);
 
         if (client.getId() == null) {
             db.insert(ClientContract.TABLE_CLIENT, null, values);

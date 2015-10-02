@@ -67,10 +67,7 @@ public class Client implements Parcelable {
     }
 
     public void save() {
-        Long idAddress = Long.valueOf(0);
-        idAddress = SQLiteClientAddressRepository.getInstance().save(clientAddress);
-        SQLiteClientRepositoy.getInstance().save(this, idAddress);
-        //TODO -> finalizar o repository.
+        SQLiteClientRepositoy.getInstance().save(this);
     }
 
     public static List<Client> getAll() {
@@ -126,7 +123,7 @@ public class Client implements Parcelable {
         age = parcel.readInt();
         if (age == -1) age = null;
         phone = parcel.readString();
-        address =  parcel.readParcelable(ClientAddress.class.getClassLoader());
+        address =  parcel.readLong();
     }
 
     public static final Parcelable.Creator<Client> CREATOR = new Parcelable.Creator<Client>() {

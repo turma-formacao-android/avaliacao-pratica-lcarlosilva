@@ -24,7 +24,7 @@ public class MemoryClientRepository implements ClientRepository {
     }
 
     @Override
-    public void save(Client client, Long idAddress) {
+    public void save(Client client) {
         Client retirar;
         if(client.getId() != null){
             alterar(client);

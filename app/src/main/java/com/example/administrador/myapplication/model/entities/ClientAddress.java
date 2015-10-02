@@ -3,6 +3,8 @@ package com.example.administrador.myapplication.model.entities;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.example.administrador.myapplication.model.persistence.repository.SQLiteClientAddressRepository;
+
 public class ClientAddress implements Parcelable {
 
     private Long id;
@@ -137,5 +139,11 @@ public class ClientAddress implements Parcelable {
         complemento = parcel.readString();
         cidade = parcel.readString();
         estado = parcel.readString();
+    }
+
+    public Long save(ClientAddress clientAddress) {
+        Long idAddress;
+        idAddress = SQLiteClientAddressRepository.getInstance().save(clientAddress);
+        return idAddress;
     }
 }
