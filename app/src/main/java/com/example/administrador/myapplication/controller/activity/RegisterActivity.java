@@ -43,8 +43,6 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText editBairro;
     private EditText editCidade;
     private EditText editEstado;
-    //private Button buttonFindCep;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +60,7 @@ public class RegisterActivity extends AppCompatActivity {
         if (client != null) {
             clientName.setText(client.getName());
             clientAge.setText(client.getAge().toString());
-            clienteComplements.setText(client.getAddress().getComplemento());
+            clienteComplements.setText(clientAddress.getComplemento());
             clientPhone.setText(client.getPhone());
         }
     }
@@ -84,7 +82,6 @@ public class RegisterActivity extends AppCompatActivity {
         editEstado = (EditText) findViewById(R.id.clientEstado);
         editNumber = (EditText) findViewById(R.id.clientNumberAdress);
 
-        //bindButtonFindCep();
     }
 
     private void actionFindContactOnTouch() {
@@ -99,7 +96,6 @@ public class RegisterActivity extends AppCompatActivity {
 
                 if (event.getAction() == MotionEvent.ACTION_UP) {
                     if (event.getRawX() >= (clientName.getRight() - clientName.getCompoundDrawables()[DRAWABLE_RIGHT].getBounds().width())) {
-                        //TODO: Explanation 2:
                         final Intent goToSOContacts = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
                         goToSOContacts.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE); // Show user only contacts w/ phone numbers
                         startActivityForResult(goToSOContacts, 999);
@@ -129,9 +125,6 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * @see <a href="http://developer.android.com/training/basics/intents/result.html">Getting a Result from an Activity</a>
-     */
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == 999) {
@@ -157,17 +150,6 @@ public class RegisterActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    /*private void bindButtonFindCep() {
-        buttonFindCep = (Button) findViewById(R.id.btnFindZip);
-        buttonFindCep.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new GetAddressByCep().execute(editTextCep.getText().toString());
-            }
-        });
-    }*/
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_client_persist, menu);
@@ -178,13 +160,13 @@ public class RegisterActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         if (item.getItemId() == R.id.menuSave) {
-            tentarSalvarClient();
+            trySaveClient();
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-    private void tentarSalvarClient() {
+    private void trySaveClient() {
         if (saveClient()) {
             Toast.makeText(RegisterActivity.this, "Cliente Cadastrado", Toast.LENGTH_SHORT).show();
             finish();
@@ -195,6 +177,7 @@ public class RegisterActivity extends AppCompatActivity {
         if (FormHelper.requireValidate(RegisterActivity.this, clientName, clientAge, clienteComplements, clientPhone)) {
             if (client == null) {
                 client = new Client();
+
             }
 
             client.setName(clientName.getText().toString());
@@ -204,12 +187,13 @@ public class RegisterActivity extends AppCompatActivity {
             clientAddress.setCep(editTextCep.getText().toString());
             clientAddress.setTipoDeLogradouro(editTipoLogradouro.getText().toString());
             clientAddress.setLogradouro(editLogradouro.getText().toString());
+            clientAddress.setBairro(editBairro.getText().toString());
             clientAddress.setNumero(Integer.parseInt(editNumber.getText().toString()));
             clientAddress.setComplemento(clienteComplements.getText().toString());
             clientAddress.setCidade(editCidade.getText().toString());
             clientAddress.setEstado(editEstado.getText().toString());
 
-            client.setAddress(clientAddress);
+            client.setAddress(clientAddress.getId());
 
             client.save();
             return true;

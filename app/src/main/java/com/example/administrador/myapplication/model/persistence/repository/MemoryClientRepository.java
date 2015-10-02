@@ -1,6 +1,7 @@
 package com.example.administrador.myapplication.model.persistence.repository;
 
 import com.example.administrador.myapplication.model.entities.Client;
+import com.example.administrador.myapplication.model.persistence.repository.interface_repository.ClientRepository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +24,7 @@ public class MemoryClientRepository implements ClientRepository {
     }
 
     @Override
-    public void save(Client client) {
+    public void save(Client client, Long idAddress) {
         Client retirar;
         if(client.getId() != null){
             alterar(client);

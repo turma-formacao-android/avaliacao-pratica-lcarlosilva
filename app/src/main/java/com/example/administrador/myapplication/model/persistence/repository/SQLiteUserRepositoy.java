@@ -8,6 +8,7 @@ import com.example.administrador.myapplication.model.entities.User;
 import com.example.administrador.myapplication.model.persistence.DatabaseHelper;
 import com.example.administrador.myapplication.model.persistence.contract.ClientContract;
 import com.example.administrador.myapplication.model.persistence.contract.UserContract;
+import com.example.administrador.myapplication.model.persistence.repository.interface_repository.UserRepository;
 import com.example.administrador.myapplication.util.AppUtil;
 
 import java.util.List;

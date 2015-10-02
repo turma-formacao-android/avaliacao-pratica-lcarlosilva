@@ -14,7 +14,9 @@ public class Client implements Parcelable {
     private String name;
     private Integer age;
     private String phone;
-    private ClientAddress address;
+    private Long address;
+
+    private ClientAddress clientAddress;
 
     public Client() {
     }
@@ -48,11 +50,11 @@ public class Client implements Parcelable {
         this.age = age;
     }
 
-    public ClientAddress getAddress() {
+    public Long getAddress() {
         return address;
     }
 
-    public void setAddress(ClientAddress address) {
+    public void setAddress(Long address) {
         this.address = address;
     }
 
@@ -65,8 +67,9 @@ public class Client implements Parcelable {
     }
 
     public void save() {
-        SQLiteClientRepositoy.getInstance().save(this);
-        SQLiteClientAddressRepository.getInstance().save(this.address);
+        Long idAddress = Long.valueOf(0);
+        idAddress = SQLiteClientAddressRepository.getInstance().save(clientAddress);
+        SQLiteClientRepositoy.getInstance().save(this, idAddress);
         //TODO -> finalizar o repository.
     }
 
@@ -114,7 +117,7 @@ public class Client implements Parcelable {
         dest.writeString(name == null ? "" : name);
         dest.writeInt(age == null ? -1 : age.intValue());
         dest.writeString(phone == null ? "" : phone);
-        dest.writeParcelable((Parcelable) address, flags);
+        dest.writeLong(address);
     }
 
     private void readToParcel(Parcel parcel) {

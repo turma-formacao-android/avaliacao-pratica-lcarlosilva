@@ -24,9 +24,9 @@ public class ClientAddressContract {
 
     public static final String[] COLUMNS = {ID, CEP, TIPODELOGRADOURO, LOGRADOURO, BAIRRO, NUMERO, COMPLEMENTO, CIDADE, ESTADO};
 
-    public static String getSqlCreateSql() {
+    public static String getSqlCreateTableAddressClient() {
         StringBuilder sql = new StringBuilder();
-        sql.append(" CREATE TABLE_CLIENT ");
+        sql.append(" CREATE TABLE ");
         sql.append(TABLE);
         sql.append(" ( ");
         sql.append(ID + " INTEGER PRIMARY KEY, ");
@@ -43,9 +43,18 @@ public class ClientAddressContract {
         return sql.toString();
     }
 
-    public static ContentValues getContentValues(Client client) {
+    public static ContentValues getContentValues(ClientAddress clientAddress) {
+
         ContentValues values = new ContentValues();
-        values.put(ClientContract.CLIENT_ID, client.getId());
+        values.put(ClientAddressContract.ID, clientAddress.getId());
+        values.put(ClientAddressContract.CEP, clientAddress.getCep());
+        values.put(ClientAddressContract.TIPODELOGRADOURO, clientAddress.getTipoDeLogradouro());
+        values.put(ClientAddressContract.LOGRADOURO, clientAddress.getLogradouro());
+        values.put(ClientAddressContract.BAIRRO, clientAddress.getBairro());
+        values.put(ClientAddressContract.NUMERO, clientAddress.getNumero());
+        values.put(ClientAddressContract.COMPLEMENTO, clientAddress.getComplemento());
+        values.put(ClientAddressContract.CIDADE, clientAddress.getCidade());
+        values.put(ClientAddressContract.ESTADO, clientAddress.getEstado());
 
         return values;
     }
@@ -56,7 +65,7 @@ public class ClientAddressContract {
             ClientAddress address = new ClientAddress();
             client.setId(cursor.getLong(cursor.getColumnIndex(ClientContract.CLIENT_ID)));
 
-            client.setAddress(address);
+            client.setAddress(address.getId());
             return address;
         }
         return null;

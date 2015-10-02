@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.example.administrador.myapplication.model.persistence.contract.ClientAddressContract;
 import com.example.administrador.myapplication.model.persistence.contract.ClientContract;
 import com.example.administrador.myapplication.model.persistence.contract.UserContract;
 
@@ -21,6 +22,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(ClientContract.getSqlCreateTableClient());
+        db.execSQL(ClientAddressContract.getSqlCreateTableAddressClient());
         db.execSQL(UserContract.getSqlCreateTableUser());
         db.execSQL(UserContract.sqlInsertUser());
     }

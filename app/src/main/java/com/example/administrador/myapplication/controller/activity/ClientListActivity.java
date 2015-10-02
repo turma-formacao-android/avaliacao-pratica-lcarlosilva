@@ -54,8 +54,7 @@ public class ClientListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Client client = (Client) parent.getItemAtPosition(position);
-                // Best Practices: http://stackoverflow.com/questions/4275678/how-to-make-phone-call-using-intent-in-android
-                final Intent goToSOPhoneCall = new Intent(Intent.ACTION_CALL /* or Intent.ACTION_DIAL (no manifest permission needed) */);
+                final Intent goToSOPhoneCall = new Intent(Intent.ACTION_CALL);
                 goToSOPhoneCall.setData(Uri.parse("tel:" + client.getPhone()));
                 startActivity(goToSOPhoneCall);
             }

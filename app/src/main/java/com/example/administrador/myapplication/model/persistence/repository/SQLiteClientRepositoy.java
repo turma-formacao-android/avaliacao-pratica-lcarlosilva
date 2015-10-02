@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import com.example.administrador.myapplication.model.entities.Client;
 import com.example.administrador.myapplication.model.persistence.contract.ClientContract;
 import com.example.administrador.myapplication.model.persistence.DatabaseHelper;
+import com.example.administrador.myapplication.model.persistence.repository.interface_repository.ClientRepository;
 import com.example.administrador.myapplication.util.AppUtil;
 
 import java.util.List;
@@ -28,12 +29,12 @@ public class SQLiteClientRepositoy implements ClientRepository {
     }
 
     @Override
-    public void save(Client client) {
+    public void save(Client client, Long idAddress) {
         DatabaseHelper helper = new DatabaseHelper(AppUtil.CONTEXT); //capturei meu db
         SQLiteDatabase db = helper.getReadableDatabase(); //obtive uma instacia do db
 
         //valores
-        ContentValues values = ClientContract.getContentValues(client);
+        ContentValues values = ClientContract.getContentValues(client, idAddress);
 
         if (client.getId() == null) {
             db.insert(ClientContract.TABLE_CLIENT, null, values);

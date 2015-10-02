@@ -2,81 +2,81 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\exploded-aar\com.wrapp.floatlabelededittext\library\0.0.6\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="0db8e1dc3097c0db8425b339e5e720ef6e918400">
-        <dex dex="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\pre-dexed\debug\classes-e792293dfe86ed05f6f82be8b0d0744f722bf1df.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\pre-dexed\debug\classes-389e0d5f7ade2a7d5cde7a5067746aa9dc5f679c.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrador\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.4.0\d6a66c7a5f01cf500377bd669507a08cfeba882a\jackson-annotations-2.4.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="d6a66c7a5f01cf500377bd669507a08cfeba882a">
-        <dex dex="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.4.0-957e51d5953566649cce450b01618dd066fe7ab7.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\pre-dexed\debug\classes-e03e669c729f5445b4e5414f4940f1328ecfa4b6.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-2279ff754f44790f42a2a8a6e868e8424489bed2.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\exploded-aar\com.melnykov\floatingactionbutton\1.3.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="8c6ebb7d087d1a30bf84356bd2aecf85309fc024">
-        <dex dex="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\pre-dexed\debug\classes-0238283dc1df101e2e45a107f4eeb0c023cb31fb.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrador\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.4.2\8e31266a272ad25ac4c089734d93e8d811652c1f\jackson-databind-2.4.2.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="8e31266a272ad25ac4c089734d93e8d811652c1f">
-        <dex dex="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\pre-dexed\debug\jackson-databind-2.4.2-9d4fda3f2ed3766caaa79775f11f28d3bf605920.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\pre-dexed\debug\classes-6eb77727d94431ee4a7a52fb777fe4ab3b7734e8.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrador\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.4.2\ceb72830d95c512b4b300a38f29febc85bdf6e4b\jackson-core-2.4.2.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="ceb72830d95c512b4b300a38f29febc85bdf6e4b">
-        <dex dex="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\pre-dexed\debug\jackson-core-2.4.2-a7255b30af94ce6864bb6ad2da6fd62570d9d5a8.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrador\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jar="C:\Users\Luiz Carlos\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-98d47de06d32194688a7c4d89cc48108878df85e.jar" />
+        <dex dex="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-868cfc1d10c430c9f23bb871f5b90629aa82a421.jar" />
     </item>
     <item
-        jar="C:\Users\Administrador\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jar="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-c870dbee423ad6c1ea421fb95c044bcbd77d28b4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luiz Carlos\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.4.2\8e31266a272ad25ac4c089734d93e8d811652c1f\jackson-databind-2.4.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8e31266a272ad25ac4c089734d93e8d811652c1f">
+        <dex dex="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\pre-dexed\debug\jackson-databind-2.4.2-4b035447eb9891a261b96d9b21aa94dc0869a2b8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\exploded-aar\com.melnykov\floatingactionbutton\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8c6ebb7d087d1a30bf84356bd2aecf85309fc024">
+        <dex dex="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\pre-dexed\debug\classes-4118e2908284326ce403c33ce4e4a82afd9af467.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\exploded-aar\com.wrapp.floatlabelededittext\library\0.0.6\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0db8e1dc3097c0db8425b339e5e720ef6e918400">
+        <dex dex="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\pre-dexed\debug\classes-be240d321e63e53c3e6d37002d220e70da3a5b47.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luiz Carlos\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="C:\Users\Administrador\Documents\repositorios\Agenda\app\build\intermediates\pre-dexed\debug\library-2.4.0-21684dd20237dfd304338ba8555bf086d9448844.jar" />
+        <dex dex="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\pre-dexed\debug\library-2.4.0-0422f9778df212d24eb9227289cbcbd53d1783c7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\pre-dexed\debug\classes-f21d6a4a6b668f982aa20de6537b705baafa4b46.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luiz Carlos\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.4.0\d6a66c7a5f01cf500377bd669507a08cfeba882a\jackson-annotations-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d6a66c7a5f01cf500377bd669507a08cfeba882a">
+        <dex dex="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.4.0-99b4218571fc9cc3b06a7dbbf99ed121b0aef9ed.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luiz Carlos\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.4.2\ceb72830d95c512b4b300a38f29febc85bdf6e4b\jackson-core-2.4.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ceb72830d95c512b4b300a38f29febc85bdf6e4b">
+        <dex dex="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\pre-dexed\debug\jackson-core-2.4.2-d3d30205193c11fb2ffe7d2ec52cc06e15081745.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\pre-dexed\debug\classes-82df10eb3c566c7cc0dc8b706c49d15f05d8eaee.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="C:\Users\Luiz Carlos\Documents\repositorio\avaliacao-pratica-lcarlosilva\app\build\intermediates\pre-dexed\debug\classes-722e81b4cb8c0f66542d3ce51006234b8c5bb06e.jar" />
     </item>
 
 </items>

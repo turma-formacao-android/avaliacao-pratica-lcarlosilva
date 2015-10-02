@@ -35,13 +35,13 @@ public class ClientContract {
         return sql.toString();
     }
 
-    public static ContentValues getContentValues(Client client) {
+    public static ContentValues getContentValues(Client client, Long idAddress) {
         ContentValues values = new ContentValues();
         values.put(ClientContract.CLIENT_ID, client.getId());
         values.put(ClientContract.CLIENT_NAME, client.getName());
         values.put(ClientContract.CLIENT_AGE, client.getAge());
         values.put(ClientContract.CLIENT_PHONE, client.getPhone());
-        values.put(ClientContract.CLIENT_ADDRESS, client.getAddress().getId());
+        values.put(ClientContract.CLIENT_ADDRESS, client.getAddress());
         return values;
     }
 
@@ -54,9 +54,9 @@ public class ClientContract {
             client.setAge(cursor.getInt(cursor.getColumnIndex(ClientContract.CLIENT_AGE)));
             client.setPhone(cursor.getString(cursor.getColumnIndex(ClientContract.CLIENT_PHONE)));
 
-            address.setId(cursor.getInt(cursor.getColumnIndex(ClientContract.CLIENT_ADDRESS)));
+            address.setId(cursor.getLong(cursor.getColumnIndex(ClientContract.CLIENT_ADDRESS)));
 
-            client.setAddress(address);
+            client.setAddress(address.getId());
             return client;
         }
         return null;
